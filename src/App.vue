@@ -10,6 +10,7 @@ console.log(import.meta.env)
   <svg style="width: 32px; height: 32px">
     <use xlink:href="#icon-test" fill="red"></use>
   </svg>
+  <svg-icon name="test"></svg-icon>
   <HelloWorld />
 </template>
 
