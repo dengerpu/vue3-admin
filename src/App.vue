@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { Check, Edit } from '@element-plus/icons-vue'
-import HelloWorld from './components/HelloWorld.vue'
+import HelloWorld from '@/components/HelloWorld.vue'
 </script>
 
 <template>
