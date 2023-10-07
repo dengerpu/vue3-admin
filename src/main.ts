@@ -1,5 +1,4 @@
 import { createApp } from 'vue'
-import './style.css'
 import App from './App.vue'
 // 引入ElementPlus
 import ElementPlus from 'element-plus'
@@ -10,6 +9,8 @@ import zhCn from 'element-plus/dist/locale/zh-cn.mjs'
 import 'virtual:svg-icons-register'
 // 引入自定义全局组件
 import gloablComponent from './components/index'
+// 引入css样式
+import '@/styles/index.scss'
 
 const app = createApp(App)
 //安装自定义插件
