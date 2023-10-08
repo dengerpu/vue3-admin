@@ -27,6 +27,7 @@ onMounted(() => {
   </svg>
   <svg-icon name="test"></svg-icon>
   <HelloWorld />
+  <router-view></router-view>
 </template>
 
 <style scoped></style>
