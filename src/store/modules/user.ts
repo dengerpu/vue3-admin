@@ -25,6 +25,7 @@ const useUserStore = defineStore('User', {
     async userLogin(data: loginFormData) {
       //登录请求
       const result: loginResponseData = await testLogin(data)
+      console.log('结果', result)
       //登录请求:成功200->token
       //登录请求:失败201->登录失败错误的信息
       if (result.code == 200) {
@@ -34,9 +35,9 @@ const useUserStore = defineStore('User', {
         //本地存储持久化存储一份
         SET_TOKEN(result.data as string)
         //能保证当前async函数返回一个成功的promise
-        return 'ok'
+        return Promise.resolve(result.data)
       } else {
-        return Promise.reject(new Error(result.data))
+        return Promise.reject(result.data)
       }
     }
   },

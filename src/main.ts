@@ -13,6 +13,8 @@ import gloablComponent from './components/index'
 import '@/styles/index.scss'
 // 引入路由
 import router from './router'
+// 引入仓库
+import store from './store'
 
 const app = createApp(App)
 //安装自定义插件
@@ -25,4 +27,5 @@ app.use(ElementPlus, {
 
 // 挂载路由
 app.use(router)
+app.use(store)
 app.mount('#app')
