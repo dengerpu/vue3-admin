@@ -65,5 +65,20 @@ export default [
       //如果有返回成功信息
       return { code: 200, data: { checkUser } }
     }
+  },
+  // 退出登陆
+  {
+    url: '/api/logout',
+    method: 'get',
+    response: (request) => {
+      //获取请求头携带token
+      const token = request.headers.token
+      //没有返回失败的信息
+      if (!token) {
+        return { code: 201, data: { message: '退出失败' } }
+      }
+      //如果有返回成功信息
+      return { code: 200, data: { message: '退出成功' } }
+    }
   }
 ]

@@ -16,6 +16,8 @@ import router from './router'
 // 引入仓库
 import store from './store'
 
+import './permisstion'
+
 const app = createApp(App)
 //安装自定义插件
 app.use(gloablComponent)
