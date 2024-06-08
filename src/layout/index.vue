@@ -9,7 +9,7 @@
     <div class="layout_tabbar"></div>
     <!-- 内容展示区域 -->
     <div class="layout_main">
-      <p style="height: 1000000px"></p>
+      <router-view></router-view>
     </div>
   </div>
 </template>
@@ -40,7 +40,6 @@ import SideBar from './SiderBar/index.vue'
     position: absolute;
     width: calc(100% - $base-menu-width);
     height: calc(100vh - $base-tabbar-height);
-    background-color: yellowgreen;
     left: $base-menu-width;
     top: $base-tabbar-height;
     padding: 20px;
